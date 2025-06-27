@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finance Tracker</title>
+    <script>
+      // IMPORTANT: Paste your Google Gemini API Key here
+      // This creates a 'process.env' object for the browser to use
+      window.process = {
+        env: {
+          API_KEY: ""
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(135deg, #101216, #1a1d23, #101216);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      
+      .markdown-content ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      .markdown-content strong {
+        color: #FFC700;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              'brand-yellow': '#FFC700',
+              'brand-dark': '#1A1D23',
+              'brand-bg': '#101216',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.523.0",
+    "recharts": "https://esm.sh/recharts@^3.0.2",
+    "date-fns": "https://esm.sh/date-fns@^4.1.0",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "framer-motion": "https://esm.sh/framer-motion@^11.3.19",
+    "date-fns/": "https://esm.sh/date-fns@^4.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-bg">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
