@@ -73,4 +73,4 @@ The ai function still not working im trying to fix it soon
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Please dont sell my shit
